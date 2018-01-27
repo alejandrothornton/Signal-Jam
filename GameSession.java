@@ -152,7 +152,23 @@ public class GameSession {
             else if(redRounds == 2 && blueRounds == 2)
             {
                 matchEnd = true;
-            }      
+            }
+            
+            //If the match is not over, reset variables for the next rounds.
+            if(!matchEnd)
+            {
+                currentRedScore = 0;
+                currentBlueScore = 0;
+                
+                line[0] = -1;
+                line[1] = -1;
+                
+                move[0] = -1;
+                move[1] = -1;
+                move[2] = -1;
+
+                gameBoard.clearBoard(red,blue);
+            }
         }
         //Loop ends if a player's round count has reached 2.    
     }
