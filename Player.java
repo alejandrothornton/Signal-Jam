@@ -71,13 +71,4 @@ public class Player {
         return discard;
     }
     
-    //Returns index of card in player's hand and placement coordinates.
-    public int[] playCard()
-    {
-        //INPUT
-        
-        //dummy line - format of output should be [index, row, column]
-        return new int[3];
-    }
-    
 }

@@ -85,10 +85,10 @@ public class GameSession {
                 //player picks a card and a spot on the board for placement.
                 if(playerTurn == 0) //red plays
                 {
-                    move = red.playCard();
+                    move = playCard();
                     //add card to tile
                     while(!gameBoard.placeTile(red.getCardFromHand(move[0]), playerTurn, move[1], move[2]))
-                        move = red.playCard();
+                        move = playCard();
                     //resolve effects, if any
                     resolveEffect(red.removeCardFromHand(move[0]), move[1], move[2]);
                     //calculate current scores
@@ -99,10 +99,10 @@ public class GameSession {
                 }
                 else    //blue plays
                 {
-                    move = blue.playCard();
+                    move = playCard();
                     //add card to tile
                     while(!gameBoard.placeTile(blue.getCardFromHand(move[0]), playerTurn, move[1], move[2]))
-                        move = blue.playCard();
+                        move = playCard();
                     //resolve effects, if any
                     resolveEffect(blue.removeCardFromHand(move[0]), move[1], move[2]);
                     //calculate current scores
@@ -116,6 +116,11 @@ public class GameSession {
                 move[0] = -1;
                 move[1] = -1;
                 move[2] = -1;
+                
+                if(playerTurn == 0)
+                    playerTurn = 1;
+                else
+                    playerTurn = 0;
             }  //Loop ends if round is completed.
             
             //Compare scores, factor line bonus.
@@ -402,6 +407,14 @@ public class GameSession {
         }
         
         return bonus;
+    }
+    
+    public int[] playCard()
+    {
+        //DUMMY LINES
+        int[] move = {-1,-1,-1};
+        
+        return move;
     }
     
     //Determines if the round has ended.
