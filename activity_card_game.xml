@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.example.antonio.cardgame.CardGame">
+
+
+    <TextView
+        android:id="@+id/integer_number"
+        android:layout_width="85dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="223dp"
+        android:text="@string/vs"
+        android:textColor="#FF0000	"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <GridView
+        android:id="@+id/gridView18"
+        android:layout_width="300dp"
+        android:layout_height="180dp"
+        android:background="#FFFF00"
+        android:visibility="visible"
+        app:layout_constraintEnd_toEndOf="@+id/g8"
+        app:layout_constraintTop_toBottomOf="@+id/integer_number">
+
+    </GridView>
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="40dp"
+        android:background="@drawable/download"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/deck" />
+
+    <ImageView
+        android:id="@+id/c7"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="47dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/imageView"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/c6"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c7"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/c5"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c6"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/c4"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c5"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/c3"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="9dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c4"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/c2"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c3"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/c1"
+        android:layout_width="42.5dp"
+        android:layout_height="50dp"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="11dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/c2"
+        app:srcCompat="@drawable/ic_launcher_background" />
+
+    <ImageView
+        android:id="@+id/g1"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="137dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g2"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/g3"
+        app:layout_constraintTop_toBottomOf="@+id/integer_number"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g3"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="155dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/integer_number"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g4"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/g5"
+        app:layout_constraintTop_toBottomOf="@+id/g1"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g5"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/g6"
+        app:layout_constraintTop_toBottomOf="@+id/g2"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g6"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/g2"
+        app:layout_constraintTop_toBottomOf="@+id/g3"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g7"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+        app:layout_constraintTop_toBottomOf="@+id/g4"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintEnd_toStartOf="@+id/g8"
+        app:layout_constraintTop_toBottomOf="@+id/g5"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <ImageView
+        android:id="@+id/g8"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        app:layout_constraintStart_toEndOf="@+id/g5"
+        app:layout_constraintTop_toBottomOf="@+id/g6"
+        app:srcCompat="@android:color/holo_blue_bright" />
+
+    <Button
+        android:id="@+id/end_button"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginTop="162dp"
+        android:backgroundTint="@drawable/first_color"
+        android:drawable="@drawable/first_color"
+        android:text="@string/end"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/first_arrow"
+        android:layout_width="66dp"
+        android:layout_height="31dp"
+        android:layout_marginStart="184dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrownobackgroundclipart6" />
+
+    <ImageView
+        android:id="@+id/first_arrow2"
+        android:layout_width="66dp"
+        android:layout_height="31dp"
+        android:layout_marginEnd="147dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/arrownobackgroundclipart61" />
+
+</android.support.constraint.ConstraintLayout>
